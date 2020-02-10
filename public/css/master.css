@@ -4,12 +4,13 @@ html{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: "Helvetica Neue", sans-serif; 
-  min-width:650px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-shadow: 2px 2px rgb(115 80 160);
+  color: rgb(153 186 187);
 }
 
 .content{
-  width: 400px;
+  width: 500px;
   height: 620px;
   padding: 40px;
   color:black; 
@@ -18,23 +19,32 @@ html{
   text-align: center;
 }
 
+
+
 .crater-pic{
+  width: 750px;
+  display: block;
+  margin-left: -135px;
+  margin-top: -50px;
+  margin-right: auto;
+}
+
+.insta-pic{
   width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 10px;
-  object-fit: cover;
-  object-position: center right;
+  display: block;
+  margin-left: -250px;
+  margin-top: 10px;
+  margin-right: auto;
+  filter: invert(86%) sepia(21%) saturate(266%) hue-rotate(133deg) brightness(81%) contrast(89%);
 }
 
 .header{
   font-weight: 100;
-  letter-spacing: 4;
-  font-size: 50px;
-  color: white;
+  letter-spacing: 10;
+  font-size: 100px;
   align-items: center;
   justify-content: center;
-  margin-top: -75px;
+  margin-top: -78px;
   display: flex;
 }
 
@@ -63,7 +73,7 @@ h5{
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: rgb(153 186 187);
   display: block;
   transition: 0.3s;
 }
@@ -87,13 +97,13 @@ h5{
   font-size: 20px;
   cursor: pointer;
   background-color: #111;
-  color: white;
+  color: rgb(153 186 187);
   padding: 10px 15px;
   border: none;
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color: rgb(115 80 160);;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
