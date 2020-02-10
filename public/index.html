@@ -1,30 +1,41 @@
 <html>
     <head>
-        <title>Justin Notarfrancesco Official Website</title>
+        <title>Crater Clothing Co.</title>
         <link rel = "stylesheet" type="text/css" href = "css/master.css">
         <link rel="shortcut icon" href="./images/favicon.ico">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <meta name="google-site-verification" content="CcNHszwdmN-iVsw6hfukK9-VTa-L379O7fPVFly3Ggg" />
         <meta name="viewport" content="width=500, initial-scale=1.0">
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
     </head>
     <body>
-        <div class = "prof-box">
-            <img src="images/IMG_1862.jpg" class="prof-pic">
-            <h1 id = "name">Justin Notarfrancesco</h1>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Products</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button> 
+          </div>
+        <div class = "header">
+            <a id = "name">Crater Clothing Co.</a>
+        </div>
+        <div class = "content">
+            <img src="images/logo.jpg" class="crater-pic">
             <h5 id = "description">
-                <b>School</b> The Ohio State University<br><br>
-                <b>Graduation</b> May 2021 <br><br>
-                <b>Major</b> Computer Science & Engineering<br><br>
-                <b>Minor</b> Business<br><br>
-                <b>Projects</b> <a class="link" href="https://www.opendemia.com">Opendemia</a> |
-                                <a class="link" href="https://www.hitchyk.com">Hitchyk</a> <br><br>
-                <b>Skills</b> Java | JavaScript | C/C++ | HTML | CSS
             </h5>
             <br>
-            <div class="social-links">
-                <a href="https://github.com/justinnotar" target = "_blank"><i class="fa fa-github" aria-hidden="true"></i></a>&nbsp
-                <a href="https://www.linkedin.com/in/justin-notarfrancesco/" target = "_blank"><i class="fa fa-linkedin"></i></a>
-            </div>
         </div>
     </body>
 </html>
