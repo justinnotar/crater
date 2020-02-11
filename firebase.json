@@ -17,8 +17,8 @@
         "destination": "/contact.html"
       },
       {
-        "source": "/aboutUs",
-        "destination": "/aboutUs.html"
+        "source": "/about",
+        "destination": "/about.html"
       },
       {
         "source": "/products",
