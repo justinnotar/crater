@@ -13,18 +13,20 @@ html{
   overflow: hidden;
 }
 
-.content{
-  width: 100%; 
-  margin: 0 auto;
-  margin-top: -75px; 
+.frontPage{
   text-align: center;
-  font-size: 100px;
+  font-size: 90px;
   letter-spacing: 0.1em;
+  margin-top: -95px;
+}
+
+.frontPage2{
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 #crater-pic{
-  width: 75%;
-  margin-top: 100px;
+  width: 100%;
 }
 
 .insta-pic{
