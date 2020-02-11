@@ -21,26 +21,26 @@ html{
 }
 
 .frontPage2{
-  max-width: 1000px;
+  max-width: 300px;
   margin: 0 auto;
 }
 
 #crater-pic{
   width: 100%;
-  margin-left: -20px;
-  margin-top: -20px;
+  margin-left: 4px;
+  margin-top: 100px;
 }
 
 .contactPage{
-  max-width: 250px;
+  max-width: 300px;
   filter: invert(86%) sepia(21%) saturate(266%) hue-rotate(133deg) brightness(81%) contrast(89%);
   margin: 0 auto;
 }
 
 #insta-pic{
   width: 100%;
-  margin-left: 14px;
-  margin-top: 150px;
+  margin-left: 4px;
+  margin-top: 100px;
 }
 
 .header{
