@@ -5,6 +5,25 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/contact",
+        "destination": "/contact.html"
+      },
+      {
+        "source": "/aboutUs",
+        "destination": "/aboutUs.html"
+      },
+      {
+        "source": "/products",
+        "destination": "/products.html"
+      }
     ]
   }
 }

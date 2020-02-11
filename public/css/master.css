@@ -15,27 +15,32 @@ html{
 
 .frontPage{
   text-align: center;
-  font-size: 90px;
+  font-size: 4.5em;
   letter-spacing: 0.1em;
-  margin-top: -95px;
+  margin-top: -30px;
 }
 
 .frontPage2{
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 #crater-pic{
   width: 100%;
+  margin-left: -20px;
+  margin-top: -20px;
 }
 
-.insta-pic{
-  width: 200px;
-  display: block;
-  margin-left: -250px;
-  margin-top: 10px;
-  margin-right: auto;
+.contactPage{
+  max-width: 250px;
   filter: invert(86%) sepia(21%) saturate(266%) hue-rotate(133deg) brightness(81%) contrast(89%);
+  margin: 0 auto;
+}
+
+#insta-pic{
+  width: 100%;
+  margin-left: 14px;
+  margin-top: 150px;
 }
 
 .header{
@@ -100,6 +105,8 @@ h5{
   color: rgb(153 186 187);
   padding: 10px 15px;
   border: none;
+  z-index: 1;
+  position: fixed;
 }
 
 .openbtn:hover {
@@ -116,4 +123,8 @@ h5{
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+  .frontPage {font-size: 26px;}
+  .contactPage {max-width: 26px;}
+  #crater-pic { width: 100px;}
+  #insta-pic { width: 100px;}
 }
