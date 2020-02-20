@@ -25,56 +25,63 @@
 </head>
 
 <body>
-    <header>
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index">Home</a>
-            <a href="products">Products</a>
-            <a href="about">About</a>
-            <a href="contact">Contact</a>
-        </div>
-        <div id="main">
-            <button class="openbtn" onclick="openNav()">&#9776;</button>
-        </div>
-        <div class="frontPage">
-            <a href="index" style="text-decoration: none; color: rgb(153 186 187);">crater</a>
-        </div>
-        <div>
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-                <input type="image" src="https://i.ibb.co/fDP9c6V/16757-200.png"  name="submit" style="left: 500px; width: 5em; position: relative;">
-                <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="-">
-            </form> 
-        </div>
-    </header>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index">Home</a>
+        <a href="products">Products</a>
+        <a href="about">About</a>
+        <a href="contact">Contact</a>
+    </div>
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+    <div class="frontPage">
+        <a href="index" class="glitch" data-text="crater"
+            style="text-decoration: none; color: rgb(153 186 187);">crater</a>
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" style="width: 0px; height: 0px;">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="encrypted"
+                value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+            <input type="image" src="https://i.ibb.co/fDP9c6V/16757-200.png" style="width: 4.5em; margin-left: 17.5px;" name="submit">
+            <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+        </form>
+    </div>
+
     <div class="productPage">
         <a style="text-decoration: none; color: rgb(153 186 187); filter: invert(86%) sepia(21%) saturate(266%) hue-rotate(133deg) brightness(81%) contrast(89%) drop-shadow(2px 2px #7350a0) !important;
         -webkit-filter: drop-shadow(2px 2px #7350a0);">
-            <img src="images/fakeShirt.png" id="noRotation" style="margin-left: -200px;">
-            <h2 style="margin-left: -75px;">
+            <img src="images/fakeShirt.png" id="noRotation" style="margin-top: 10px;">
+            <h2 style="margin-left: 130px;">
                 $20
             </h2>
         </a>
-        <div id="paypal-button-container buttonBuy"></div>
         <script
             src="https://www.paypal.com/sdk/js?client-id=ARB1wL5tRHQXiXoviHJ4uWiW9RUHyt1P7dC2LSGnYl31gAknIXKEv3N6vdDRGD6LA59y4mc-XWyMOOxd&currency=USD"
             data-sdk-integration-source="button-factory"></script>
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="Y3EN46PXNMSLN">
-                <table style="margin-left: 195px; margin-top: -255px;">
-                <tr><td><input type="hidden" name="on0" value="Size"><center>Size</center><br></td></tr><tr><td><select name="os0">
-                    <option value="Small">Small </option>
-                    <option value="Medium">Medium </option>
-                    <option value="Large">Large </option>
-                    <option value="X-Large">X-Large </option>
-                </select> </td></tr>
-                </table>
-                <br>
-                <input type="image" style="margin-left: 150px;" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                </form>                        
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="Y3EN46PXNMSLN">
+            <table style="margin-left: 110px; margin-top: -10px;">
+                <tr>
+                    <td><input type="hidden" name="on0" value="Size">
+                    </td>
+                </tr>
+                <tr>
+                    <td><select name="os0">
+                            <option disabled selected value> Size </option>
+                            <option value="Small">Small </option>
+                            <option value="Medium">Medium </option>
+                            <option value="Large">Large </option>
+                            <option value="X-Large">X-Large </option>
+                        </select> </td>
+                </tr>
+            </table>
+            <br>
+            <input type="image" style="margin-left: 67.5px;"
+                src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png"
+                name="submit">
+            <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
     </div>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>

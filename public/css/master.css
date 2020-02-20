@@ -25,6 +25,7 @@ html{
   margin: 0 auto;
 }
 
+
 .productPage{
   max-width: 300px;
   margin: 0 auto;
@@ -62,7 +63,7 @@ html{
 .header{
   font-weight: 100;
   letter-spacing: 10;
-  font-size: 550%;
+  font-size: 50%;
   align-items: center;
   justify-content: center;
   margin-top: -78px;
@@ -132,6 +133,15 @@ html{
   position: fixed;
 }
 
+.cart {
+  cursor: pointer;
+  color: rgb(153 105 187);
+  padding: -100px 1005px;
+  border: none;
+  z-index: 1;
+  position: fixed;
+}
+
 .openbtn:hover {
   background-color: rgb(115 80 160);;
 }
@@ -161,4 +171,102 @@ html{
   to {
       transform:rotate(360deg);
   }
+}
+.glitch {
+  position: relative;
+  margin: 0 auto;
+  text-shadow: 2px 2px rgb(115 80 160);
+  color: rgb(153 186 187);
+  font-size: 1em;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-transform: lowercase;
+  transform: scale3d(1, 1, 1);
+  letter-spacing: 0.1em;
+}
+.glitch::before, .glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  color: rgb(153 186 187);
+  clip: rect(0, 900px, 0, 0);
+}
+.glitch::before {
+  left: 7px;
+  text-shadow: 1px 0 red;
+  animation: glitch-effect 3s infinite linear alternate-reverse;
+}
+.glitch::after {
+  left: 3px;
+  text-shadow: -1px 0 blue;
+  animation: glitch-effect 2s infinite linear alternate-reverse;
+}
+@keyframes glitch-effect {
+  0% {
+    clip: rect(40px, 9999px, 19px, 0);
+ }
+  5% {
+    clip: rect(24px, 9999px, 9px, 0);
+ }
+  10% {
+    clip: rect(2px, 9999px, 64px, 0);
+ }
+  15% {
+    clip: rect(22px, 9999px, 42px, 0);
+ }
+  20% {
+    clip: rect(52px, 9999px, 25px, 0);
+ }
+  25% {
+    clip: rect(67px, 9999px, 43px, 0);
+ }
+  30% {
+    clip: rect(31px, 9999px, 8px, 0);
+ }
+  35% {
+    clip: rect(50px, 9999px, 78px, 0);
+ }
+  40% {
+    clip: rect(7px, 9999px, 38px, 0);
+ }
+  45% {
+    clip: rect(88px, 9999px, 19px, 0);
+ }
+  50% {
+    clip: rect(28px, 9999px, 33px, 0);
+ }
+  55% {
+    clip: rect(48px, 9999px, 31px, 0);
+ }
+  60% {
+    clip: rect(24px, 9999px, 71px, 0);
+ }
+  65% {
+    clip: rect(51px, 9999px, 65px, 0);
+ }
+  70% {
+    clip: rect(45px, 9999px, 14px, 0);
+ }
+  75% {
+    clip: rect(67px, 9999px, 7px, 0);
+ }
+  80% {
+    clip: rect(14px, 9999px, 7px, 0);
+ }
+  85% {
+    clip: rect(59px, 9999px, 79px, 0);
+ }
+  90% {
+    clip: rect(62px, 9999px, 63px, 0);
+ }
+  95% {
+    clip: rect(72px, 9999px, 86px, 0);
+ }
+  100% {
+    clip: rect(5px, 9999px, 89px, 0);
+ }
 }
