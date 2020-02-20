@@ -1,59 +1,64 @@
 <html>
-   <head>
-      <title>Crater Clothing Co.</title>
-      <link rel = "stylesheet" type="text/css" href = "css/master.css">
-      <link rel="shortcut icon" href="./images/favicon.ico">
-      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-      <meta name="google-site-verification" content="CcNHszwdmN-iVsw6hfukK9-VTa-L379O7fPVFly3Ggg" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-      <script>
-         function openNav() {
-             document.getElementById("mySidebar").style.width = "250px";
-             document.getElementById("main").style.marginLeft = "250px";
-         }
-         function closeNav() {
-             document.getElementById("mySidebar").style.width = "0";
-             document.getElementById("main").style.marginLeft = "0";
-         }
-      </script>
-      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-   </head>
-   <body>
-      <div id="mySidebar" class="sidebar">
-         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-         <a href="products">Products</a>
-         <a href="about">About</a>
-         <a href="contact">Contact</a>
-      </div>
-      <div id="main">
-         <button class="openbtn" onclick="openNav()">&#9776;</button> 
-      </div>
-      <div class = "frontPage">
-         <a href="index" style="text-decoration: none; color: rgb(153 186 187);">crater</a>
-      </div>
-      <div class = "aboutText">
-         <h1>made by justin notarfrancesco & amlan chaudhuri<br></br>est. 2020</h1>
-      </div>
-      <!-- The core Firebase JS SDK is always required and must be listed first -->
-      <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
-      <!-- TODO: Add SDKs for Firebase products that you want to use
+
+<head>
+   <title>Crater Clothing Co.</title>
+   <link rel="stylesheet" type="text/css" href="css/master.css">
+   <link rel="shortcut icon" href="./images/faviconUpdated.ico">
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   <meta name="google-site-verification" content="CcNHszwdmN-iVsw6hfukK9-VTa-L379O7fPVFly3Ggg" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+   <script>
+      function openNav() {
+         document.getElementById("mySidebar").style.width = "250px";
+         document.getElementById("main").style.marginLeft = "250px";
+      }
+      function closeNav() {
+         document.getElementById("mySidebar").style.width = "0";
+         document.getElementById("main").style.marginLeft = "0";
+      }
+   </script>
+   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index">Home</a>
+      <a href="products">Products</a>
+      <a href="about">About</a>
+      <a href="contact">Contact</a>
+   </div>
+   <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+   </div>
+   <div class="frontPage">
+      <a href="index" style="text-decoration: none; color: rgb(153 186 187);">crater</a>
+   </div>
+   <div class="aboutText">
+      <h1>made by justin notarfrancesco & amlan chaudhuri<br></br>est. 2020</h1>
+   </div>
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+   <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
-      <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
-      <script>
-         // Your web app's Firebase configuration
-         var firebaseConfig = {
-             apiKey: "AIzaSyCSufKu30dUEK19I6s9BBkzsujeZ3Jqn28",
-             authDomain: "crater-684c7.firebaseapp.com",
-             databaseURL: "https://crater-684c7.firebaseio.com",
-             projectId: "crater-684c7",
-             storageBucket: "crater-684c7.appspot.com",
-             messagingSenderId: "348221734553",
-             appId: "1:348221734553:web:e483ca46a4b1cd934b0208",
-             measurementId: "G-CC3T46CNRV"
-         };
-         // Initialize Firebase
-         firebase.initializeApp(firebaseConfig);
-         firebase.analytics();
-      </script>
-   </body>
+   <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+   <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+         apiKey: "AIzaSyCSufKu30dUEK19I6s9BBkzsujeZ3Jqn28",
+         authDomain: "crater-684c7.firebaseapp.com",
+         databaseURL: "https://crater-684c7.firebaseio.com",
+         projectId: "crater-684c7",
+         storageBucket: "crater-684c7.appspot.com",
+         messagingSenderId: "348221734553",
+         appId: "1:348221734553:web:e483ca46a4b1cd934b0208",
+         measurementId: "G-CC3T46CNRV"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+   </script>
+</body>
+
 </html>

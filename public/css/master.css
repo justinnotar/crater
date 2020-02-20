@@ -25,9 +25,30 @@ html{
   margin: 0 auto;
 }
 
+.productPage{
+  max-width: 300px;
+  margin: 0 auto;
+}
+
 #crater-pic{
   width: 100%;
-  margin-left: 4px;
+  margin-left: 5px;
+  margin-top: 100px;
+  animation-name: spin;
+  animation-duration: 30000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#noRotation {
+  width: 100%;
+  margin-left: 5px;
+  margin-top: 100px;
+}
+
+#insta-pic{
+  width: 100%;
+  margin-left: 5px;
   margin-top: 100px;
 }
 
@@ -36,12 +57,6 @@ html{
   filter: invert(86%) sepia(21%) saturate(266%) hue-rotate(133deg) brightness(81%) contrast(89%) drop-shadow(2px 2px #7350a0) !important;
   -webkit-filter: drop-shadow(2px 2px #7350a0);
   margin: 0 auto;
-}
-
-#insta-pic{
-  width: 100%;
-  margin-left: 4px;
-  margin-top: 100px;
 }
 
 .header{
@@ -59,6 +74,12 @@ html{
   letter-spacing: 0.1em;
   text-align: center;
   margin-top: 150px; 
+}
+
+#buttonBuy {
+  margin-left: 200px;
+  margin-top: -190px;
+  width: 100%;
 }
 
 /* The sidebar menu */
@@ -129,4 +150,15 @@ html{
   .contactPage {max-width: 26px;}
   #crater-pic { width: 100px;}
   #insta-pic { width: 100px;}
+  #noRotation { width: 50px;}
+  #buttonBuy { width: 50px;}
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
 }
