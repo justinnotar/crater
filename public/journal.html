@@ -46,9 +46,63 @@
          <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
       </form>
    </div>
-   <div class="aboutText">
-      <h1>made by justin notarfrancesco & amlan chaudhuri<br></br>est. 2020</h1>
+
+   <!-- <table style="width:75%" align="center">
+      <tr>
+        <td align="center"><img src="images/photoShoot1.png" id="noRotation1"></td>
+        <td align="center"><img src="images/photoShoot2.png" id="noRotation1"></td> 
+        <td align="center"><img src="images/photoShoot0.png" id="noRotation1"></td>
+      </tr>
+    </table> -->
+
+    <!-- Slideshow container -->
+    
+<div class="slideshow-container">
+
+   <!-- Full-width images with number and caption text -->
+   <div class="mySlides fade">
+     <img src="images/photoShoot1.jpg" id="noRotation1">
    </div>
+ 
+   <div class="mySlides fade">
+     <img src="images/photoShoot2.jpg" id="noRotation1">
+   </div>
+ 
+   <div class="mySlides fade">
+     <img src="images/photoShoot0.jpg" id="noRotation1">
+   </div>
+ </div>
+ <br>
+ 
+ <!-- The dots/circles -->
+ <div style="text-align:center">
+   <span class="dot"></span> 
+   <span class="dot"></span> 
+   <span class="dot"></span> 
+ </div>
+
+ <script>
+   var slideIndex = 0;
+   showSlides();
+   
+   function showSlides() {
+     var i;
+     var slides = document.getElementsByClassName("mySlides");
+     var dots = document.getElementsByClassName("dot");
+     for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+     }
+     slideIndex++;
+     if (slideIndex > slides.length) {slideIndex = 1}    
+     for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace("active", "");
+     }
+     slides[slideIndex-1].style.display = "block";  
+     dots[slideIndex-1].className += " active";
+     setTimeout(showSlides, 3000); // Change image every 2 seconds
+   }
+   </script>
+
    <!-- The core Firebase JS SDK is always required and must be listed first -->
    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
    <!-- TODO: Add SDKs for Firebase products that you want to use

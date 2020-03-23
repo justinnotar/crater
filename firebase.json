@@ -23,6 +23,14 @@
       {
         "source": "/products",
         "destination": "/products.html"
+      },
+      {
+        "source": "/firstDrop",
+        "destination": "/firstDrop.html"
+      },
+      {
+        "source": "/journal",
+        "destination": "/journal.html"
       }
     ]
   }
