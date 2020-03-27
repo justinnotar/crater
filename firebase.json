@@ -31,6 +31,14 @@
       {
         "source": "/journal",
         "destination": "/journal.html"
+      },
+      {
+        "source": "/secondDrop",
+        "destination": "/secondDrop.html"
+      },
+      {
+        "source": "/thirdDrop",
+        "destination": "/thirdDrop.html"
       }
     ]
   }

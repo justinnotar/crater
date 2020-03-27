@@ -1,5 +1,6 @@
 html{
-  background: url(../images/sky.jpg);
+  background: url(../images/spaceTile.png);
+  background-repeat: repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9,8 +10,7 @@ html{
   color: rgb(153 186 187);
   height: 100%;
   width: 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .frontPage{
@@ -27,7 +27,7 @@ html{
 
 
 .productPage{
-  max-width: 300px;
+  max-width: 400px;
   margin: 0 auto;
   margin-top: -25px;
 }
@@ -48,7 +48,7 @@ html{
   margin-top: 25px;
 }
 
-#noRotation1 {
+#slideshow {
   width: 100%;
   box-shadow: 4px 4px rgb(115 80 160);
   border-width: 4px;
@@ -85,7 +85,7 @@ html{
   font-weight: 10;
   letter-spacing: 0.1em;
   text-align: center;
-  margin-top: 150px; 
+  margin-top: 200px; 
 }
 
 #buttonBuy {
@@ -144,14 +144,6 @@ html{
   position: fixed;
 }
 
-.cart {
-  cursor: pointer;
-  color: rgb(153 105 187);
-  padding: -100px 1005px;
-  border: none;
-  z-index: 1;
-  position: fixed;
-}
 
 .openbtn:hover {
   background-color: rgb(115 80 160);;
