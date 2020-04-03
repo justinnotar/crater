@@ -25,10 +25,6 @@
         "destination": "/products.html"
       },
       {
-        "source": "/firstDrop",
-        "destination": "/firstDrop.html"
-      },
-      {
         "source": "/journal",
         "destination": "/journal.html"
       },
@@ -39,6 +35,10 @@
       {
         "source": "/thirdDrop",
         "destination": "/thirdDrop.html"
+      },
+      {
+        "source": "/fourthDrop",
+        "destination": "/fourthDrop.html"
       }
     ]
   }
