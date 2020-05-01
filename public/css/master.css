@@ -1,15 +1,10 @@
 html{
   background: url(../images/spaceTile.png);
   background-repeat: repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-size: 810px 822px;
   font-family: 'Josefin Sans', sans-serif;
   text-shadow: 2px 2px rgb(115 80 160);
   color: rgb(153 186 187);
-  height: 100%;
-  width: 100%;
   overflow: scroll;
 }
 

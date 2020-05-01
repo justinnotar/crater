@@ -23,7 +23,8 @@
 </head>
 
 <body>
-    <a style="position: absolute; width: 100%; text-align: center; font-size: 20px; margin-left: -10px; color: rgb(28 21 36); text-shadow: none; background-color: rgb(153 186 187); height: 30px; top: 0px; padding-top: 7.5px;">Use code 'launch' for 10% off your order!</a><br>        <div id="mySidebar" class="sidebar">
+    <a id="timer" style="position: absolute; width: 100%; text-align: center; font-size: 20px; margin-left: -10px; color: rgb(28 21 36); text-shadow: none; background-color: rgb(153 186 187); height: 30px; top: 0px; padding-top: 7.5px;"></a><br>
+    <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index">Home</a>
         <a href="products">Products</a>
@@ -50,8 +51,11 @@
 
     <div class="productPage">
         <img src="images/scatter-logo-min.png" id="noRotation" style="margin-top: 10px;">
-        <h2 style="margin-left: 185px; margin-top: -10px; text-decoration: none;"><br>
-            $15
+        <h2 style="text-decoration: none; margin-top: -10px; color: rgb(153 186 187);"><br>
+            <center>original crater</center>
+        </h2>
+        <h2 style="text-decoration: none; color: rgb(153 186 187);">
+            <center>$14.99</center>
         </h2>
         <script
             src="https://www.paypal.com/sdk/js?client-id=ARB1wL5tRHQXiXoviHJ4uWiW9RUHyt1P7dC2LSGnYl31gAknIXKEv3N6vdDRGD6LA59y4mc-XWyMOOxd&currency=USD"
@@ -62,7 +66,7 @@
             
             var coupons = new Array ( // place to put coupon codes
             "osuvintage", // 1st coupon value - comma seperated
-            "launch", // 2nd coupon value - add all you want
+            // "launch", // 2nd coupon value - add all you want
             "yang10", // 3rd coupon value
             "liam10",
             "wayne10",
@@ -75,10 +79,12 @@
             "tsakiris10",
             "matty10",
             "suky10",
-            "HOSS10"
+            "HOSS10",
+            "mike10"
             );
             var coupdc = new Array ( // place to put discounts for coupon vals
             10,
+            // 10,
             10,
             10,
             10,
@@ -138,11 +144,11 @@
             <input type="hidden" name="cmd" value="_cart">
             <input type="hidden" name="business" value="GBBJZCS5U2W6L">
             <input type="hidden" name="lc" value="US">
-            <input type="hidden" name="item_name" value="Scatter Logo">
+            <input type="hidden" name="item_name" value="Original Crater">
             <input type="hidden" name="item_number" value="3292993508">
-            <input type="hidden" name="amount" value="15.00">
-            <input type="hidden" name="baseamt" value="15.00" />
-            <input type="hidden" name="basedes" value="Scatter Logo @15.00" />
+            <input type="hidden" name="amount" value="14.99">
+            <input type="hidden" name="baseamt" value="14.99" />
+            <input type="hidden" name="basedes" value="Original Crater @14.99" />
             <input type="hidden" name="currency_code" value="USD">
             <input type="hidden" name="button_subtype" value="products">
             <input type="hidden" name="no_note" value="0">
@@ -160,8 +166,8 @@
             <tr><td><input type="hidden" name="on0" value="Size"></td></tr><tr><td><select name="os0" required>
                 <option disabled selected value>Size </option>
                 <option value="Small">Small </option>
-                <option value="Medium">Medium </option>
-                <option value="Large">Large </option>
+                <option disabled value="Medium">Medium </option>
+                <option disabled value="Large">Large </option>
                 <option disabled value="X-Large">X-Large </option>
                 <option disabled value="XX-Large">XX-Large </option>
             </select> </td></tr>
@@ -172,6 +178,36 @@
         
         
     </div>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 8, 2020 23:59:59").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="timer"
+          document.getElementById("timer").innerHTML = "\"i want to leave\" hoodie available for " + days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "\"i want to leave\" hoodie no longer available!";
+          }
+        }, 1000);
+    </script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
     <!-- TODO: Add SDKs for Firebase products that you want to use
