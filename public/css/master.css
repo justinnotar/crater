@@ -15,9 +15,10 @@ html{
   margin-top: -30px;
 }
 
-.frontPage2{
-  max-width: 300px;
+.frontPage2 {
+  display: flex;
   margin: 0 auto;
+  justify-content: center;
 }
 
 
@@ -28,9 +29,8 @@ html{
 }
 
 #crater-pic{
-  width: 100%;
-  margin-left: 5px;
-  margin-top: 25px;
+  width: 400px;
+  margin-top: 50px;
   animation-name: spin;
   animation-duration: 30000ms;
   animation-iteration-count: infinite;
@@ -147,18 +147,6 @@ html{
 #main {
   transition: margin-left .5s; /* If you want a transition effect */
   padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-  .frontPage {font-size: 26px;}
-  .contactPage {max-width: 26px;}
-  #crater-pic { width: 100px;}
-  #insta-pic { width: 100px;}
-  #noRotation { width: 50px;}
-  #buttonBuy { width: 50px;}
 }
 
 @keyframes spin {
